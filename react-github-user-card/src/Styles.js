@@ -20,3 +20,7 @@ text-align: center;
 align-items: center;
 width: 75%;
 `
+
+export const Body = styled.body`
+text-align: center;
+`

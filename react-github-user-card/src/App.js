@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
-import {Img, Card} from "./Styles"
+import {Img, Card, Body} from "./Styles"
+import User from "./User"
 
 
 class App extends React.Component {
@@ -25,8 +26,12 @@ console.log("new followers state");
 
 render() {
 return (
-<body>
-<h1>Followers:</h1>
+<Body>
+  <h1>
+  Welcome to Creytfm followers page!
+  </h1>
+  <User/>
+<h2>Followers:</h2>
 {this.state.followers.map(name => {
 return (
 <Card key={name.id}>
@@ -35,7 +40,7 @@ return (
 </Card>
 );
 })}
-</body>
+</Body>
 );
 }
 }
